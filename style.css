@@ -4,18 +4,13 @@
 
 .container {
     display: grid;
-    /* background-color: grey; */
-    /* height: 100vh; */
+    background-color: #8971d0;
+    color: black;
+    text-align: center;
     gap: 2rem;
     grid-column: 1fr 1.5fr 1.5fr 1fr;
     grid-row: 1fr 1fr 1fr 1fr 1fr;
     height: 100vh;
-}
-
-.container > div {
-    text-align: center;
-    /* padding: 1rem; */
-    border: 3px solid red;
 }
 
 .header {
@@ -27,45 +22,56 @@
     align-items: center;
     justify-content: space-between;
 }
-img[src*="Searchbar.png"] {
-    height: 20px;
-    width: 20px;
-    margin-bottom: -5px;
-    gap: 10px;
-}
 
 .icons {
     display: flex;
     gap: 1rem;
 }
 
-img[src*="Profile.png"] {
-    height: 60px;
-    width: 60px;
-}
-
-img[src*="Bell.png"] {
-    height: 40px;
-    width: 40px;
-    margin-bottom: -35px;
-}
-
 .sidebar {
-    /* margin-left: -20px; */
-    color: white;
-    background-color: rgba(103, 16, 143, 0.859);
     grid-column: 1;
     grid-row: 1 / 6;
+    border: 3px solid red;
 }
 
-img[src*="Github.png"] {
-    height: 60px;
-    width: 60px;
+.sidebar-title {
+    padding: .5rem;
+    grid-row: 1;
+}
+
+.items-container {
+    display: grid;
+    height: 100%;
+    /* border: solid red 3px; */
+    grid-row: repeat(1fr 1fr 1fr);
+    gap: 5rem;
+}
+
+.items-maincontent {
+    padding: 0px 0px 0px 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; 
+    grid-row: 2;
+    margin-top: -50px;
+}
+
+.items-maincontent img {
+    height: 30px;
+    width: auto;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 .main-content {
+    border: 3px solid red;
     grid-column: 2 / 4;
-    grid-row: 2 / 6;
+    grid-row: 2 / 4;
     display: grid;
     grid-template-columns: repeat(1fr, 1fr, 1fr);
     min-width: 500px;
@@ -107,38 +113,36 @@ img[src*="Github.png"] {
 
 }
 
-.items-container {
-    display: grid;
-    /* border: solid red 3px; */
-    grid-row: repeat(1fr 1fr 1fr);
-    gap: 5rem;
+.footer-container {
+    border: 3px solid red;
+    grid-column: 2 / 4;
+    grid-row: 4 / 6;
 }
 
-.items-maincontent, .items-footer {
-    padding: 0px 0px 0px 20px;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.sidebar-title {
-    padding: .5rem;
-    grid-row: 1;
-    /* border: 3px solid red; */
-}
-
-.items-maincontent {
-    /* border: 3px solid red; */
-    grid-row: 2;
-    margin-top: -50px;
-}
-
-.items-footer {
-    grid-row: 3;
-}
-
-img {
+.main-content img {
     width: 100%;
     height: auto;
+}
+
+img[src*="Bell.png"] {
+    height: 40px;
+    width: 40px;
+    margin-bottom: -35px;
+}
+
+img[src*="Profile.png"] {
+    height: 60px;
+    width: 60px;
+}
+
+img[src*="Github.png"] {
+    height: 60px;
+    width: 60px;
+}
+
+img[src*="Searchbar.png"] {
+    height: 20px;
+    width: 20px;
+    margin-bottom: -5px;
+    gap: 10px;
 }
