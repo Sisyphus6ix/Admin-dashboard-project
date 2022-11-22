@@ -21,18 +21,33 @@
 .header {
     grid-column: 2 / 5;
     grid-row: 1;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+    max-height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+img[src*="Searchbar.png"] {
+    height: 20px;
+    width: 20px;
+    margin-bottom: -5px;
+    gap: 10px;
 }
 
-.row1 {
-    grid-row: 1 / 1;
-    border: solid red 3px;
+.icons {
+    display: flex;
+    gap: 1rem;
 }
 
-.row2 {
-    grid-row: 2 / 2;
-    border: solid red 3px;
+img[src*="Profile.png"] {
+    height: 60px;
+    width: 60px;
+}
+
+img[src*="Bell.png"] {
+    height: 40px;
+    width: 40px;
+    margin-bottom: -35px;
 }
 
 .sidebar {
@@ -43,18 +58,17 @@
     grid-row: 1 / 6;
 }
 
+img[src*="Github.png"] {
+    height: 60px;
+    width: 60px;
+}
+
 .main-content {
     grid-column: 2 / 4;
     grid-row: 2 / 6;
-    
     display: grid;
     grid-template-columns: repeat(1fr, 1fr, 1fr);
     min-width: 500px;
-    max-height: 450px;
-}
-
-.main-content > div {
-    border: solid 3px red;
 }
 
 .content1 {
@@ -70,13 +84,27 @@
 .announcement {
     grid-column: 4;
     grid-row: 2 / 4;
-    
+    display: grid;
+    grid-template-rows: repeat(1fr, 1fr);
+    min-width: 400px;
+    height: 300px;
 }
 
-.trending {
+.line {
+    height: 1px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    width: 90%;
+    margin: auto;
+}
+
+.feedback {
     grid-column: 4;
     grid-row: 4 / 6;
-    /* height: 100px; */
+    height: 300px;
+    background-image: url(Images/Feedback.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
 .items-container {
@@ -94,7 +122,7 @@
     gap: 1rem;
 }
 
-.title {
+.sidebar-title {
     padding: .5rem;
     grid-row: 1;
     /* border: 3px solid red; */
@@ -112,5 +140,5 @@
 
 img {
     width: 100%;
-    height: 100%;
+    height: auto;
 }
