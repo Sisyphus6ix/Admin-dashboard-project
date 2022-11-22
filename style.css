@@ -119,6 +119,10 @@
     grid-row: 4 / 6;
 }
 
+.footer-header {
+    text-align: left;
+}
+
 .main-content img {
     width: 100%;
     height: auto;
