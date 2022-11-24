@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
     margin: 0px;
 }
@@ -5,14 +7,16 @@
 body {
     display: grid;
     padding: 20px;
-    background-color: #5d44a8;
+    background-color: #5e3acc;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {
     display: grid;
+    height: auto;
     padding: 10px;
     border-radius: 30px;
-    background-color: #8971d0;
+    background-color: #f7f5d8;
     color: black;
     text-align: center;
     gap: 2rem;
@@ -42,7 +46,7 @@ body {
 }
 
 span {
-    color: #41249a;
+    color: #5e3acc;
 }
 
 .sidebar-title {
@@ -159,6 +163,10 @@ span {
     /* border: 3px solid red; */
     grid-column: 2 / 3;
     grid-row: 4 / 6;
+}
+
+.footer-content {
+    margin-top: 8rem;
 }
 
 .footer-header, .main-content-header, .announcements-header, .feedback-header {

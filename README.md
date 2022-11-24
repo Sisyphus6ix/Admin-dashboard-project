@@ -5,9 +5,9 @@ This project is created for the purpose of learning and part of the "The Odin Pr
 
 
 ### To-Do!
-- Consider changing page colors to be me appealing
-- Make minor changes to other style elements
+<!-- - Consider changing page colors to be me appealing -->
+<!-- - Make minor changes to other style elements -->
 - Fix up the overall layout of my page and make it more responsive
-- Make tasks section clearner, possibly add a calander?
+<!-- - Make tasks section clearner, possibly add a calander? -->
 <!-- ### What I learned?
 -  -->
